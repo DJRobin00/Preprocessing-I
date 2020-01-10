@@ -50,10 +50,127 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 62.5%;
 }
 
 html, body {
     height: 100%;
 }
 
+html {
+	background-color: #16b3f1;
+}
+
+@subtext-color: rgb(255, 251, 9);
+
+.container {
+	width: 90%;
+	margin: auto;
+	padding:  2.5%
+}
+
+header nav {
+	display: flex;
+	justify-content: center;
+	justify-content: space-evenly;
+	padding: 2%;
+
+	a {
+		font-size: 20px;
+		margin: 1%;
+		color: @subtext-color;
+		text-decoration: none;
+		text-align: center;
+	}
+}
+
+h1 {
+	font-size: 3.2rem;
+	display: flex;
+	justify-content: center;
+
+	
+}
+
+h2 {
+	display: flex;
+	justify-content: center;
+	font-size: 2rem;
+	
+}
+
+#intro {
+	display: flex;
+	
+
+	.left {
+		display: flex;
+		padding: 5%;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 60%;
+		height: auto;
+	
+
+		h3 {
+			display:flex;
+			justify-content: center;
+			color: @subtext-color;
+			padding: 1%;
+			border-bottom: solid 2px black;
+		
+		}
+	
+		
+	}
+
+	.right {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 10%;
+		height: 40vh;
+
+			.portrait {
+				height: 12rem;
+			}
+	}
+}
+
+#portfolio {
+	
+	
+	.layout {
+		display: flex;
+	
+		.boxes {
+			display: flex;
+			justify-content: center;
+
+		}
+
+		#box1, #box2, #box3, 
+	#box4 {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		padding: 1%;
+		height: 40vh;
+			border: 1px solid black;
+
+
+		}
+
+		img {
+			height: 10rem;
+		}
+	}
+
+	
+}
+
+#contact {
+	padding: 4%;
+}
