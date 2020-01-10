@@ -129,26 +129,93 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 html,
 body {
   height: 100%;
 }
-header {
-  border: solid;
-  height: 60vh;
-  background-color: #596391c5;
+html {
+  background-color: #16b3f1;
+}
+.container {
+  width: 90%;
+  margin: auto;
+  padding: 2.5%;
 }
 header nav {
   display: flex;
   justify-content: center;
-  margin: 3%;
+  justify-content: space-evenly;
+  padding: 2%;
 }
 header nav a {
-  margin: 2%;
+  font-size: 20px;
+  margin: 1%;
+  color: #fffb09;
   text-decoration: none;
-  color: navy;
+  text-align: center;
 }
-header nav a:hover {
-  color: white;
+h1 {
+  font-size: 3.2rem;
+  display: flex;
+  justify-content: center;
+}
+h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+#intro {
+  display: flex;
+}
+#intro .left {
+  display: flex;
+  padding: 5%;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;
+  height: auto;
+}
+#intro .left h3 {
+  display: flex;
+  justify-content: center;
+  color: #fffb09;
+  padding: 1%;
+  border-bottom: solid 2px black;
+}
+#intro .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+  height: 40vh;
+}
+#intro .right .portrait {
+  height: 12rem;
+}
+#portfolio .layout {
+  display: flex;
+}
+#portfolio .layout .boxes {
+  display: flex;
+  justify-content: center;
+}
+#portfolio .layout #box1,
+#portfolio .layout #box2,
+#portfolio .layout #box3,
+#portfolio .layout #box4 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 1%;
+  height: 40vh;
+  border: 1px solid black;
+}
+#portfolio .layout img {
+  height: 10rem;
+}
+#contact {
+  padding: 4%;
 }
